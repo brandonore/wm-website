@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-87DrmpqHRiY8hPLIr7ByqhPIywuSsjuQAfMXAE0sMUpY3BM7nXjf+mLIUSvhDArs" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
-    <link href="css/resume.min.css" rel="stylesheet">
+    <link href="css/styles.min.css" rel="stylesheet">
 
   </head>
 
@@ -87,23 +87,12 @@
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="store-container mr-auto">
               <h4 class="store-list-header">Store List</h4>
-              <ul>
-                <li><button>Allgreens</button></li>
-                <li><button>Cannbotica</button></li>
-                <li><button>Cannabicare</button></li>
-                <li><button>The Dankery</button></li>
-                <li><button>Elevations</button></li>
-                <li><button>The Herbal Cure</button></li>
-                <li><button>Kind Pain Management</button></li>
-                <li><button>The Lodge</button></li>
-                <li><button>Lush</button></li>
-                <li><button>Palmer Lake Wellness Center</button></li>
-                <li><button>Top Shelf</button></li>
-                <li><button>Trill Alternatives</button></li>
+              <ul class="store-list">
+                
               </ul>
             </div>
             <div class="gmaps-container mr-auto">
-              <span class="text-primary">Googly maps here</span>
+              <div id="map"></div>
             </div>
           </div>
         </div>
@@ -252,6 +241,9 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
+    <script src="js/stores.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvOIYQw1uwP8uhE9SAhIObDgOIP2pTyXI&callback=initMap"
+    async defer></script>
 
   </body>
 
