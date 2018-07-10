@@ -1,3 +1,6 @@
+/*---------------------------------------
+* Initial variables
+* ---------------------------------------*/
 let map,
     bluePin,
     shopName,
@@ -5,17 +8,21 @@ let map,
 let latitude,
     longitude = null;
 
-// Array of stores and their google maps coordinates
-var shops = [
-    {name: 'Allgreens', lat: 39.728782, lon: -104.999745},
-    {name: 'Trill Alternatives', lat: 40.019464, lon: -105.275255},
-    {name: 'Canna Botica', lat: 39.720963, lon: -105.013522},
-    {name: 'Elevations', lat: 38.951448, lon: -104.800673},
-    {name: 'Dankery', lat: 38.885426, lon: -104.830743},
-    {name: 'Top Shelf', lat: 38.850572, lon: -104.686118},
-    {name: 'Cannibicare', lat: 38.850572, lon: -104.686118}
-]
+/*========================= Edit/Add shops here =========================*/
+/**/ let shops = [
+/**/     {name: 'Allgreens', lat: 39.728782, lon: -104.999745},
+/**/     {name: 'Trill Alternatives', lat: 40.019464, lon: -105.275255},
+/**/     {name: 'Canna Botica', lat: 39.720963, lon: -105.013522},
+/**/     {name: 'Elevations', lat: 38.951448, lon: -104.800673},
+/**/     {name: 'Dankery', lat: 38.885426, lon: -104.830743},
+/**/     {name: 'Top Shelf', lat: 38.850572, lon: -104.686118},
+/**/     {name: 'Cannibicare', lat: 38.850572, lon: -104.686118}
+/**/ ]
+/*========================= Edit/Add shops here =========================*/
 
+/*---------------------------------------
+* Functions
+* ---------------------------------------*/
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 39.728782, lng: -104.999745},
@@ -46,12 +53,11 @@ const populateStoreList = () => {
         shopName = $(this).text();
         console.log(shopName);
         findShop(shops, shopName);
-        console.log(latitude, longitude);
-        updateMap();
+        getAddress();
     });
 }
 
-// Loop through shops and set lat, lon based on which shop is clicked
+// Loop through shops and set lat, lon
 const findShop = (arr, val) => {
     for(let i = 0; i < shops.length; i++) {
         if(arr[i].name === val) {
@@ -61,6 +67,25 @@ const findShop = (arr, val) => {
     }
 }
 
+// find address and store in data var
+const getAddress = () => {
+    let url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=AIzaSyCvOIYQw1uwP8uhE9SAhIObDgOIP2pTyXI`;
+    fetch(url)
+        .then((res) => {
+            return res.json();
+        })
+        .then((obj) => {
+            let str = obj.results[0].formatted_address;
+            str = str.replace(',', '<br />');
+            data = `<b>${shopName}</b><br />${str}`;
+            updateMap();
+        })
+        .catch((err) => {
+            console.log(err);
+        });
+}
+
+// update map on click and place marker
 const updateMap = () => {
     const myLatLng = new google.maps.LatLng(latitude, longitude);
     console.log(myLatLng);
@@ -83,4 +108,5 @@ const updateMap = () => {
     google.maps.event.trigger(marker, 'click', {});
 }
 
+// call funcs
 populateStoreList();
