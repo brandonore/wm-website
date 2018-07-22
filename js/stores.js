@@ -15,7 +15,7 @@ let latitude,
 /**/     {name: 'Canna Botica', lat: 39.720963, lon: -105.013522},
 /**/     {name: 'Elevations', lat: 38.951448, lon: -104.800673},
 /**/     {name: 'Dankery', lat: 38.885426, lon: -104.830743},
-/**/     {name: 'Top Shelf', lat: 38.850572, lon: -104.686118},
+/**/     {name: 'Top Shelf', lat: 39.714415, lon: -104.987909},
 /**/     {name: 'Cannibicare', lat: 38.850572, lon: -104.686118}
 /**/ ]
 /*========================= Edit/Add shops here =========================*/

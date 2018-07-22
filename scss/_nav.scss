@@ -16,13 +16,14 @@
     color: $gray-700;
   }
   border-bottom: 1px solid $gray-300;
-  > button {
+    > button {
     // border: 1px solid $gray-700;
     background: $gray-700;
-    > span {
-      color: $gray-700 !important;
-    }
   }
+}
+
+.navbar-toggler-icon {
+    color: $white !important;
 }
 
 @media (min-width: 992px) {

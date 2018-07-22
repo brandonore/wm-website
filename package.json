@@ -19,7 +19,7 @@
         "jquery": "latest"
     },
     "devDependencies": {
-        "browser-sync": "latest",
+        "browser-sync": "2.24.6",
         "gulp": "latest",
         "gulp-clean-css": "latest",
         "gulp-header": "latest",
