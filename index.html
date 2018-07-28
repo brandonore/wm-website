@@ -100,21 +100,34 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
         <div class="my-auto">
-            <div id="slide-window">
-              <ol id="slides" start="1">
-                <li class="slide alive" style="background-image:url('img/s1.jpg');"></li>
-                <li class="slide" style="background-image:url('img/s2.jpg');"></li>
-                <li class="slide" style="background-image:url('img/s3.jpg');"></li> 
-                <li class="slide" style="background-image:url('img/s4.jpg');"></li>
-                <li class="slide" style="background-image:url('img/s5.jpg');"></li>
-                <li class="slide" style="background-image:url('img/s6.jpg');"></li>
-                <li class="slide" style="background-image:url('img/s7.jpg');"></li>
-              </ol>
-              <span class="nav fa fa-chevron-left fa-3x" id="left"></span>
-              <span class="nav fa fa-chevron-right fa-3x" id="right"></span>
-              <!-- <div id="credit">asdf<br>Slide No.<span id="count">1</span><br><span id="zoom">zoom</span></div> -->
-          </div>
-
+            <div  class="css-slider-wrapper">
+                <input type="radio" name="slider" class="slide-radio1" checked id="slider_1">
+                <input type="radio" name="slider" class="slide-radio2" id="slider_2">
+                <input type="radio" name="slider" class="slide-radio3" id="slider_3">
+                <input type="radio" name="slider" class="slide-radio4" id="slider_4">
+                <div class="slider-pagination">
+                    <label for="slider_1" class="page1"></label>
+                    <label for="slider_2" class="page2"></label>
+                    <label for="slider_3" class="page3"></label>
+                    <label for="slider_4" class="page4"></label>
+                </div>
+                <div class="next control">
+                    <label for="slider_1" class="numb1"><i class="fa fa-arrow-circle-right"></i></label>
+                    <label for="slider_2" class="numb2"><i class="fa fa-arrow-circle-right"></i></label>
+                    <label for="slider_3" class="numb3"><i class="fa fa-arrow-circle-right"></i></label>
+                    <label for="slider_4" class="numb4"><i class="fa fa-arrow-circle-right"></i></label>
+                </div>
+                <div class="previous control">
+                    <label for="slider_1" class="numb1"><i class="fa fa-arrow-circle-left"></i></label>
+                    <label for="slider_2" class="numb2"><i class="fa fa-arrow-circle-left"></i></label>
+                    <label for="slider_3" class="numb3"><i class="fa fa-arrow-circle-left"></i></label>
+                    <label for="slider_4" class="numb4"><i class="fa fa-arrow-circle-left"></i></label>
+                </div>
+                <div class="slider slide1"></div>
+                <div class="slider slide2"></div>
+                <div class="slider slide3"></div>
+                <div class="slider slide4"></div>
+            </div>
         </div>
       </section>
 
