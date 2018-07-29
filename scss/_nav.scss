@@ -14,7 +14,13 @@
     font-weight: 600;
     text-transform: uppercase;
     color: $gray-700;
+    transition: all .2s linear;
   }
+
+  .navbar-nav .nav-item .nav-link:hover {
+    color: $main-pink;
+  }
+
   border-bottom: 1px solid $gray-300;
     > button {
     // border: 1px solid $gray-700;

@@ -17,6 +17,11 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-87DrmpqHRiY8hPLIr7ByqhPIywuSsjuQAfMXAE0sMUpY3BM7nXjf+mLIUSvhDArs" crossorigin="anonymous">
 
+    <!-- Tiva Calendar -->
+    <link rel="stylesheet" href="vendor/tiva-calendar/assets/css/calendar.css">
+    <link rel="stylesheet" href="vendor/tiva-calendar/assets/css/calendar_full.css">
+    <link rel="stylesheet" href="vendor/tiva-calendar/assets/css/calendar_compact.css">
+
     <!-- Custom styles for this template -->
     <link href="css/styles.min.css" rel="stylesheet">
 
@@ -112,16 +117,16 @@
                     <label for="slider_4" class="page4"></label>
                 </div>
                 <div class="next control">
-                    <label for="slider_1" class="numb1"><i class="fa fa-arrow-circle-right"></i></label>
-                    <label for="slider_2" class="numb2"><i class="fa fa-arrow-circle-right"></i></label>
-                    <label for="slider_3" class="numb3"><i class="fa fa-arrow-circle-right"></i></label>
-                    <label for="slider_4" class="numb4"><i class="fa fa-arrow-circle-right"></i></label>
+                    <label for="slider_1" class="numb1"><i class="fas fa-angle-right"></i></label>
+                    <label for="slider_2" class="numb2"><i class="fas fa-angle-right"></i></label>
+                    <label for="slider_3" class="numb3"><i class="fas fa-angle-right"></i></label>
+                    <label for="slider_4" class="numb4"><i class="fas fa-angle-right"></i></label>
                 </div>
                 <div class="previous control">
-                    <label for="slider_1" class="numb1"><i class="fa fa-arrow-circle-left"></i></label>
-                    <label for="slider_2" class="numb2"><i class="fa fa-arrow-circle-left"></i></label>
-                    <label for="slider_3" class="numb3"><i class="fa fa-arrow-circle-left"></i></label>
-                    <label for="slider_4" class="numb4"><i class="fa fa-arrow-circle-left"></i></label>
+                    <label for="slider_1" class="numb1"><i class="fas fa-angle-left"></i></label>
+                    <label for="slider_2" class="numb2"><i class="fas fa-angle-left"></i></label>
+                    <label for="slider_3" class="numb3"><i class="fas fa-angle-left"></i></label>
+                    <label for="slider_4" class="numb4"><i class="fas fa-angle-left"></i></label>
                 </div>
                 <div class="slider slide1"></div>
                 <div class="slider slide2"></div>
@@ -133,60 +138,9 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
         <div class="my-auto">
-          <h2 class="mb-5">Skills</h2>
-
-          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-          <ul class="list-inline list-icons">
-            <li class="list-inline-item">
-              <i class="devicons devicons-html5"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-css3"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-javascript"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-jquery"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-sass"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-less"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-bootstrap"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-wordpress"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-grunt"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-gulp"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-npm"></i>
-            </li>
-          </ul>
-
-          <div class="subheading mb-3">Workflow</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Mobile-First, Responsive Design</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Browser Testing &amp; Debugging</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Functional Teams</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Agile Development &amp; Scrum</li>
-          </ul>
+          <h2>Upcoming Drops</h2>
+          <div class="subheading mb-5">See what's coming next</div>
+          <div class="tiva-events-calendar full" data-source="json"></div>
         </div>
       </section>
 
@@ -242,10 +196,14 @@
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
+    <!-- Tiva calendar -->
+    <script src="vendor/tiva-calendar/config/config.js"></script>
+    <script src="vendor/tiva-calendar/assets/languages/en.js"></script>
+    <script src="vendor/tiva-calendar/assets/js/calendar.js"></script>
+
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
     <script src="js/stores.min.js"></script>
-    <script src="js/slider.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvOIYQw1uwP8uhE9SAhIObDgOIP2pTyXI&callback=initMap"
     async defer></script>
 

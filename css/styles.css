@@ -84,6 +84,11 @@ h2 {
   font-weight: 600;
   text-transform: uppercase;
   color: #495057;
+  transition: all .2s linear;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link:hover {
+  color: #FC466B;
 }
 
 #sideNav > button {
@@ -233,7 +238,7 @@ section.resume-section .resume-item .resume-date {
   background-color: #495057;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   position: absolute;
   left: 0;
   top: 0;
@@ -249,8 +254,8 @@ section.resume-section .resume-item .resume-date {
   align-items: center;
   justify-content: center;
   align-content: center;
-  -webkit-transition: -webkit-transform 1600ms;
-  transition: -webkit-transform 1600ms, transform 1600ms;
+  -webkit-transition: -webkit-transform 600ms;
+  transition: -webkit-transform 600ms, transform 600ms;
   -webkit-transform: scale(1);
   transform: scale(1);
 }
@@ -329,6 +334,10 @@ section.resume-section .resume-item .resume-date {
 
 .previous {
   left: 1%;
+}
+
+.next > label, .previous > label {
+  font-size: 5rem;
 }
 
 /* sliding effect */

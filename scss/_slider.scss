@@ -16,7 +16,7 @@
   background-color: $gray-700;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   position: absolute;
   left: 0;
   top: 0;
@@ -35,8 +35,8 @@
   justify-content: center;
   align-content: center;
   
-  -webkit-transition: -webkit-transform 1600ms;
-  transition: -webkit-transform 1600ms, transform 1600ms;
+  -webkit-transition: -webkit-transform 600ms;
+  transition: -webkit-transform 600ms, transform 600ms;
   -webkit-transform: scale(1);
   transform: scale(1);
 }
@@ -92,11 +92,19 @@
 .control label:hover {
     opacity: 0.5;
 }
+
 .next {
     right: 1%;
 }
+
 .previous {
     left: 1%;
+}
+
+.next, .previous {
+  > label {
+    font-size: 5rem;
+  }
 }
 
 /* sliding effect */
