@@ -7,7 +7,7 @@ let map,
     data;
 let latitude,
     longitude = null;
-let wholesale = [];
+let wholesale = {};
 
 /*========================= Edit/Add shops here =========================*/
 /**/ let shops = [
@@ -110,19 +110,4 @@ const updateMap = () => {
 }
 
 // call funcs
-populateStoreList();
-
-// get wholesale list from google sheets
-// fetch('https://sheets.googleapis.com/v4/spreadsheets/1MF6zwwG2CzQLC6CZKjLQlbjtKwo2xRg0RFHFuJXfn7Q/?key=AIzaSyCvOIYQw1uwP8uhE9SAhIObDgOIP2pTyXI&includeGridData=true')
-//     .then((res) => {
-//         return res.json();
-//     })
-//     .then((data) => {
-//         // console.log(data.sheets[0].data[0].rowData[3].values);
-//         for(let i = 3; i < 24; i++) {
-//             for(let x = 0; x < 5; x++) {
-//                 console.log(data.sheets[0].data[0].rowData[i].values[x].formattedValue)
-//             } 
-//         }
-//         console.log(wholesale);
-//     });
+populateStoreList();  
