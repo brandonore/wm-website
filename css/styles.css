@@ -225,6 +225,54 @@ section.resume-section .resume-item .resume-date {
   }
 }
 
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  height: 582.5px;
+}
+
+.contact-container form > input {
+  border: none;
+  height: 10%;
+  text-indent: 10px;
+}
+
+.contact-container form > .i1, .contact-container form .i2 {
+  border-left: 1px solid #495057;
+  border-right: 1px solid #495057;
+}
+
+.contact-container form > .i1 {
+  border-top: 1px solid #495057;
+  border-bottom: 1px solid #495057;
+}
+
+.contact-container form > textarea {
+  height: 70%;
+  text-indent: 10px;
+  padding-top: 10px;
+  border: none;
+  border-top: 1px solid #495057;
+  border-left: 1px solid #495057;
+  border-right: 1px solid #495057;
+}
+
+.contact-container form > button {
+  text-decoration: none;
+  color: #FC466B;
+  border: none;
+  border: 2px solid #FC466B;
+  background: none;
+  height: 10%;
+  transition: all .2s linear;
+}
+
+.contact-container form > button:hover {
+  background: #FC466B;
+  color: #fff;
+  cursor: pointer;
+}
+
 #education {
   padding: 0 !important;
 }
@@ -329,6 +377,10 @@ section.resume-section .resume-item .resume-date {
   transition: all .2s linear;
 }
 
+.control label > i::before {
+  width: 20px;
+}
+
 .control label:hover {
   opacity: 0.5;
 }
@@ -386,7 +438,7 @@ section.resume-section .resume-item .resume-date {
 }
 
 .ws-container {
-  border: 4px solid #495057;
+  border: 1px solid #495057;
   height: 650px;
   overflow-y: scroll;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
