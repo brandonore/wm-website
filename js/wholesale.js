@@ -1,5 +1,5 @@
 // get wholesale list from google sheets
-fetch(`https://sheets.googleapis.com/v4/spreadsheets/1MF6zwwG2CzQLC6CZKjLQlbjtKwo2xRg0RFHFuJXfn7Q/values/A4:F25?key=AIzaSyCvOIYQw1uwP8uhE9SAhIObDgOIP2pTyXI`)
+fetch(`https://sheets.googleapis.com/v4/spreadsheets/1MF6zwwG2CzQLC6CZKjLQlbjtKwo2xRg0RFHFuJXfn7Q/values/A5:F100?key=AIzaSyCvOIYQw1uwP8uhE9SAhIObDgOIP2pTyXI`)
     .then((res) => {
         return res.json();
     })
